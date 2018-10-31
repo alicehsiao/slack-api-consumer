@@ -1,0 +1,206 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage?token=<SLACK_TOKEN>
+    body:
+      encoding: UTF-8
+      string: text=THIS%20IS%20ALICE%20IN%20TESTING&channel=nodes-api-testing&username=Alice&icon_emoji=%3Adodgers%3A&as_user=false
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 31 Oct 2018 17:44:17 GMT
+      Server:
+      - Apache
+      X-Slack-Router:
+      - p
+      X-Slack-Req-Id:
+      - 875f03fc-3d5f-4675-8871-01d1f88e2c4d
+      X-Oauth-Scopes:
+      - read,client,identify,post,apps
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Slack-Exp:
+      - '1'
+      X-Slack-Backend:
+      - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-a8yo
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 3a89ec81413ada8ae1c2005b5973a09f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - e9lYvRRzc0FDzbn1EkqeYK1rojGcWVQ9vLfc0JiEOXt8LeF6aQcuTw==
+    body:
+      encoding: UTF-8
+      string: '{"ok":true,"channel":"CDL4DV7GV","ts":"1541007857.000900","message":{"text":"THIS
+        IS ALICE IN TESTING","username":"Alice","icons":{"emoji":":dodgers:"},"bot_id":"BDR1LJX71","type":"message","subtype":"bot_message","ts":"1541007857.000900"}}'
+    http_version: 
+  recorded_at: Wed, 31 Oct 2018 17:44:18 GMT
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage?token=<SLACK_TOKEN>
+    body:
+      encoding: UTF-8
+      string: text=THIS%20IS%20ALICE%20IN%20TESTING&channel=bogus_api&username=Alice&icon_emoji=%3Adodgers%3A&as_user=false
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 31 Oct 2018 17:47:57 GMT
+      Server:
+      - Apache
+      X-Slack-Router:
+      - p
+      X-Slack-Req-Id:
+      - 55109baf-6877-4659-8ee7-d0c7bc07e036
+      X-Oauth-Scopes:
+      - read,client,identify,post,apps
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Slack-Exp:
+      - '1'
+      X-Slack-Backend:
+      - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-g9aw
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 88eb066576c1b47cd896ab0019b9f25f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 3QZkHm_MVYbVsWnymtMPXDPLWKjQBj1hcQJ9BKQmEag-E3rF3-JWCQ==
+    body:
+      encoding: UTF-8
+      string: '{"ok":false,"error":"channel_not_found"}'
+    http_version: 
+  recorded_at: Wed, 31 Oct 2018 17:47:57 GMT
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage?token=<SLACK_TOKEN>
+    body:
+      encoding: UTF-8
+      string: text=To%20Infinity%20and%20Beyond&channel=nodes-api-testing&username=Alice&icon_emoji=%3Adodgers%3A&as_user=false
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 31 Oct 2018 18:03:06 GMT
+      Server:
+      - Apache
+      X-Slack-Router:
+      - p
+      X-Slack-Req-Id:
+      - 8052eae8-8ee8-4138-bad6-8060563a7822
+      X-Oauth-Scopes:
+      - read,client,identify,post,apps
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Slack-Exp:
+      - '1'
+      X-Slack-Backend:
+      - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-a8fg
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 51f2e50a0d2a5ee1d9c830bf417b2713.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - w7Psd9M_pPu6p2BHc8JfBT4LNq_ajbyJhEZUijGiikTJ-0LaaumTlA==
+    body:
+      encoding: UTF-8
+      string: '{"ok":true,"channel":"CDL4DV7GV","ts":"1541008986.001800","message":{"text":"To
+        Infinity and Beyond","username":"Alice","icons":{"emoji":":dodgers:"},"bot_id":"BDR1LJX71","type":"message","subtype":"bot_message","ts":"1541008986.001800"}}'
+    http_version: 
+  recorded_at: Wed, 31 Oct 2018 18:03:06 GMT
+recorded_with: VCR 4.0.0

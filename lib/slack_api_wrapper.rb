@@ -29,7 +29,7 @@ class SlackApiWrapper
       "as_user" => "false"
     },
     :headers => { 'Content-Type' => 'application/x-www-form-urlencoded' })
-    return response.success?
+    return response['ok']
   end
 
   # def self.create_channel(api_params)

@@ -26,11 +26,19 @@ describe Channel do
     expect(channel.members).must_equal []
   end
 
-  it "will the defaults if not given parameters for the purpose, is_archived, OR members" do
+  it "will initialize the defaults if not given parameters for the purpose, is_archived, OR members" do
     channel = Channel.new("Name", "ID", purpose: "Chat", members: [1, 4, 5])
 
     expect(channel.purpose).must_equal "Chat"
     expect(channel.is_archived).must_equal false
+    expect(channel.members).must_equal [1, 4, 5]
+  end
+
+  it "will initialize the purpose, is_archived, and members properly if given all three" do
+    channel = Channel.new("Name", "ID", purpose: "Chat", is_archived: true, members: [1, 4, 5])
+
+    expect(channel.purpose).must_equal "Chat"
+    expect(channel.is_archived).must_equal true
     expect(channel.members).must_equal [1, 4, 5]
   end
 end
